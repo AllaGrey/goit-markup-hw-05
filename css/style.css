@@ -283,8 +283,7 @@ ul, ol {
     height: 70px;
     bottom: 0;
 
-    background-color: #2F303ACC;
-    opacity: 0.8;
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
 
@@ -471,6 +470,7 @@ ul, ol {
 .projects-image {
     position: relative;
     overflow: hidden;
+
 }
 
 .project-text-hover {
@@ -486,13 +486,13 @@ ul, ol {
     top: 0;
     left: 0;
     height: 100%;
-    transform: translateY(100%)
+    transform: translateY(100%);
+    transition: var(--period) var(--cubic);
 
 }
 
 .projects-item:hover .project-text-hover {
     transform: translateY(0%);
-    transition: var(--cubic) var(--period);
 }
 
 
